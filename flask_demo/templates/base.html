@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<b>
+<h1>TODO LIST</h1>
+<a href="http://g.cn">This is a Google link</a>
+<br />
+<br />
+<!-- <img src="/images/image.jpg" /> -->
+
+
+</b>
+
+
+{% block body %}
+<form action="/item/commit" method="post">
+  <ul>
+    {% for data in datas %}
+      <p>
+          <input type="radio" name="complete_mission_id" value="{{ data.index }}">
+          Mission : {{ data.mission }}
+          <br>
+          Name : {{ data.name }}
+          <br>
+          Time : {{ data.time }}
+     </p>
+      <br>
+    {% endfor %}
+  </ul>
+
+  <br><br><br>
+
+  Name:<input type="text" name="name" value="Ryan"/>
+  Time:<input type="text" name="time" value={{ timedata.time }} />
+  <br>
+  Mission:<input type="text" name="mission" value="Please Enter Your Mission Here!"/>
+  <br>
+  <input type="submit" value="COMMIT"/>
+  <input type="color" name="color" value="">
+</form>
+{% endblock %}
+</html>
