@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <!-- <iframe src="http://localhost:5000" width="800" height="200">
+
+  </iframe> -->
+
+  {% block body %}
+    {% for comment in comments %}
+    <ul>
+      Content : {{ comment.content }}
+      <br>
+      Commited by {{ comment.author_name }} Email: {{ comment.email }}
+      <br>
+       @ {{ comment.created_at }}
+    </ul>
+    {% endfor %}
+{% endblock %}
+
+  <form action="/comment/commit" method="post">
+    Content: <input type="text" name="content" value="Please Enter your comment here!">
+    <br>
+    Your Name:<input type="text" name="author_name" value="Ryan">
+    Your E-Mail:<input type="text" name="email" value="ryan951125@icloud.com">
+    <input type="submit" name="submit" value="submit">
+  </form>
+
+</html>
