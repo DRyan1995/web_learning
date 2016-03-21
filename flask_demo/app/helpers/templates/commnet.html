@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <iframe src="localhost:7000" width="800" height="200">
+    {% block body %}
+      {% for comment in comments%}
+      <ul>
+        Content : {{ comment.content }}
+        <br>
+        Commited by {{ comment.author_name }} @ {{ comment.created_at }}
+      </ul>
+      {% endfor %}
+  {% endblock %}
+    <form action="/comment/commit" method="post">
+      Content: <input type="text" name="content" value="Please Enter your comment here">
+      <br>
+      author_name:<input type="text" name="author_name" value="Ryan">
+    </form>
+  </iframe>
+
+
+</html>
