@@ -14,7 +14,7 @@
       <br>
       Commited by {{ comment.author_name }} Email: {{ comment.email }}
       <br>
-       @ {{ comment.created_at }}
+       @ {{ comment.timestr }}
     </ul>
     {% endfor %}
 {% endblock %}
@@ -24,7 +24,13 @@
     <br>
     Your Name:<input type="text" name="author_name" value="Ryan">
     Your E-Mail:<input type="text" name="email" value="ryan951125@icloud.com">
+    <br>
+    Page Title:<input id="page_name" type="text" name="page_name" value="">
     <input type="submit" name="submit" value="submit">
+    <script type="text/javascript">
+
+    </script>
   </form>
+
 
 </html>
