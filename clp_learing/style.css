@@ -1,0 +1,42 @@
+.para1{
+  text-align: right;
+  text-decoration-style: solid;
+  margin: lem;
+}
+
+#baidupic{
+  margin-left: 6%;
+  margin-top: 8%;
+}
+
+#info{
+
+}
+.toparea{
+  height: 100%;
+  width: 100%;
+}
+
+.btn_top{
+  float: right;
+  margin-top: 5%;
+  margin-right: 8%;
+}
+
+#title{
+  text-align: center;
+  width: 25%;
+  margin-left: 25%;
+  margin-top: -8%;
+  font:italic bold 22px arial,sans-serif;
+}
+#detail{
+  text-align: center;
+  width: 30%;
+  margin-left: 23%;
+  margin-top: -1%;
+}
+div{
+  border-style: solid;
+  display: inline-block;
+}

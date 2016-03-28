@@ -1,0 +1,64 @@
+.avatar{
+  float: left;
+  margin-left: 5%;
+  margin-top: 20px;
+}
+
+.infobox{
+  width: auto;
+  margin-top: 25px;
+  margin-left: 5%;
+  float: left;
+}
+
+.btn_group{
+  width: auto;
+  margin-top: 15px;
+  margin-right: 5%;
+  float: right;
+}
+
+#blankblock{
+  width: 100%;
+  height: 50px;
+}
+
+#circlename{
+  width: auto;
+  font:bold 22px arial,sans-serif;
+}
+
+#quanziname{
+  width: auto;
+  font: 18px arial,sans-serif;
+}
+
+#blankblock2{
+  width: 100%;
+  height: 200px;
+}
+
+#circleinfo{
+  width: auto;
+  font:italic 16px arial,sans-serif;
+}
+
+#btn1{
+  width: 50px;
+  background-color: lightgreen;
+}
+#btn2{
+  width: 50px;
+  background-color: lightgreen;
+}
+
+body{
+  display: inline;
+}
+
+div{
+
+}
+h1{
+  text-align: center;
+}
