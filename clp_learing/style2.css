@@ -28,11 +28,6 @@
   font:bold 22px arial,sans-serif;
 }
 
-#quanziname{
-  width: auto;
-  font: 18px arial,sans-serif;
-}
-
 #blankblock2{
   width: 100%;
   height: 200px;
@@ -56,9 +51,6 @@ body{
   display: inline;
 }
 
-div{
-
-}
 h1{
   text-align: center;
 }
