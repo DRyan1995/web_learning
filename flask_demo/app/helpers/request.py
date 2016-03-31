@@ -4,12 +4,14 @@ from app.models.comment import Comment
 from datetime import datetime
 import time
 
-@app.route("/", methods=["GET"])
-def index():
-    db.create_all()
+@app.route("/<pageid>", methods=["GET"])
+def index(pageid):
+
+    # db.create_all()
     # page_name = request.args.get("page_name")
     # if not page_name:
     #     return "ERROR"
+    print(pageid)
     cs = Comment.query.all()
     comments = list()
     for c in cs:
