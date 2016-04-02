@@ -4,6 +4,6 @@ from app.models.comment import Comment
 from app.models.item import Item
 
 if __name__ == '__main__':
-    port = 7000
+    port = 5000
     #print("RUN python app dirrectly on port %d" % port)
     app.run(debug=True)
