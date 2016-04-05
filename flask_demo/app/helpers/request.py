@@ -37,3 +37,7 @@ def post_comment_commit():
     db.session.add(c)
     db.session.commit()
     return redirect(url_for("index"))
+
+@app.route("/home")
+def home():
+    return "fuckyou"
